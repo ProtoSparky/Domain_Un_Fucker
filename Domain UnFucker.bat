@@ -2,7 +2,7 @@
 chcp 65001
 
 :start
-TITLE Domain UnFucker v1.1
+TITLE Domain UnFucker v1.3
 mode con: cols=80 lines=15
 cls
 echo 1. Enable Mobile Hotspot
@@ -15,6 +15,9 @@ echo 7. Do all of the above
 echo 8. Info
 
 echo Run this program as an administrator 
+echo.
+echo Check for updates on: https://github.com/Kaupas24/Domain_Un_Fucker/releases
+echo.
 
 set input=
 set /p input=Select a number
@@ -81,7 +84,7 @@ shutdown /r /t 2 /c "Restarted by domain Un-fucker"
 
 :Info
 cls
-mode con: cols=88 lines=30
+mode con: cols=88 lines=33
 TITLE Info
                                 
 echo                   ╭━━━╮╱╱╱╱╱╱╱╱╱╱╱╱╱╭╮╱╭╮╱╱╱╱╱╭━━━╮╱╱╱╱╱╭╮
@@ -112,7 +115,9 @@ echo CHANGE DNS IP
 echo This option changes the DNS ip to 8.8.8.8, which can sometimes bypass the domain
 echo from resetting some settings.
 echo ----------------------------------------------------------------------------------
+echo.
+echo Check for updates on: https://github.com/Kaupas24/Domain_Un_Fucker/releases
+echo.
 set input=
 set /p input= Press enter to go back to the main menu
 if /i '%input%'=='' goto start
-
